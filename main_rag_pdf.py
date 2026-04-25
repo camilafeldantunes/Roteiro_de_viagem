@@ -33,7 +33,7 @@ documentos = sum(
 )
 
 pedacos = RecursiveCharacterTextSplitter(
-    chunk_size = 1000, chunk_overlap=100
+    chunk_size = 1000, chunk_over_lap=100
 ).split_documents(documentos)
 
 dados_recuperados = FAISS.from_documents(
